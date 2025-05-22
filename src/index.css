@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+header {
+    position: relative;
+}
+
+.imag{
+    position: relative;
+}
+
+header .logo {
+ font-weight: 600;
+ font-size: 20px;
+}
+
+header ul.nav{
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover{
+    opacity: 0.5;
+}
+
+.cart-icon{
+    fill: black;
+}
+
+
+.cart-icon:hover,
+.cart-icon.active{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform 500ms ease;
+    fill:red;
+}
+
+.cart {
+ margin-top: 20px;
+ position: absolute;
+ width: 300px;
+ background-color: white;
+ z-index: 1;
+    -webkit-box-shadow: 8px 5px 9px 0px rgba(0,0,0,0.52);
+    box-shadow: 8px 5px 9px 0px rgba(0,0,0,0.52);
+    border-radius: 10px;
+}
+
+header .cart .item{
+    max-width: 150px;
+}
+
+header .cart .item img{
+
+    max-width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+header .presentation {
+    margin: 50px 0;
+    background: url("./img/main.jpeg") no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+    position: relative;
+}
+
+header .presentation:after {
+    content: "Better productions for your home";
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+header .presentation:before {
+    content: "We have cheaper prices";
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  background-color: #f5f5f5;
+    overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+main .item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms ease;
+}
+
+main .item img:hover {
+    transform: scale(1.2);
+}
+
+main h2,
+main p,
+main b {
+    margin: 10px 20px;
+    color: #333;
+}
+main b {
+    color: darkgreen;
+}
+
+main .add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #282c34;
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 500ms ease;
+}
+
+main .add-to-cart:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
